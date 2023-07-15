@@ -109,7 +109,49 @@ a {
 }
 
 
+
+/* HERO */
+
+
+.hero {
+  position: relative;
+  padding-top: 173px;
+  padding-bottom: 126px;
+  background-image: url('/images/banner-bg.jpg');
+  background-color: #888888;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, .6);
+}
+
+.hero-title {
+  z-index: 1;
+  position: relative;
+  max-width: 688px;
+  font-size: 45px;
+  line-height: 1.66;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
 /* TRENDING */
+
+
 
 .trending {
   padding-top: 64px;
@@ -223,46 +265,9 @@ a {
 }
 
 
-/* HERO */
-
-
-.hero {
-  position: relative;
-  padding-top: 173px;
-  padding-bottom: 126px;
-  background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg');
-  background-color: #888888;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hero:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  background: rgba(0, 0, 0, .6);
-}
-
-.hero-title {
-  z-index: 1;
-  position: relative;
-  max-width: 688px;
-  font-size: 45px;
-  line-height: 1.66;
-  font-weight: bold;
-  color: #FFFFFF;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-
 
 /* MAIN */
+
 
 
 .columns {
@@ -462,7 +467,7 @@ a {
 }
 
 .search-btn {
-  background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/search.svg');
+  background-image: url('/svg/search.svg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 18px 18px;
@@ -563,15 +568,15 @@ a {
 }
 
 .social-link-dribble {
-  background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg');
+  background-image: url('/svg/001-dribbble.svg');
 }
 
 .social-link-pinterest {
-  background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg');
+  background-image: url('/svg/002-pinterest.svg');
 }
 
 .social-link-tumblr {
-  background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg');
+  background-image: url('/svg/003-tumblr.svg');
 }
 
 .copy {
