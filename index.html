@@ -7,6 +7,37 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="popup visually-hidden">
+    <h2 class="popup-title title-2 title-underlined">ваш фидбек</h2>
+    <form class="popup-form" action="#" class="popup-form">
+      <div class="input-group">
+        <label class="popup-label" for="popup-how-frequent">Как часто вы заходите на сайт?</label>
+        <select class="input popup-select popup-input" name="popup-how-frequent" id="how-frequent-select">
+          <option value="almost-each-day">Почти каждый день</option>
+          <option value="one-time-days">Раз в несколько дней</option>
+          <option value="one-time-weeks">Раз в несколько недель</option>
+          <option value="couple-times-year">Несколько раз в год</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="popup-is-subscriber" class="popup-label">Вы подписаны на e-mail рассылку?</label>
+        <div class="radio-group">
+          <input class="popup-radio" type="radio" name="popup-is-subscriber" id="popup-subscriber-yes" checked>
+          <label class="popup-label radio-label" for="popup-subscriber-yes">Да</label>
+          <input class="popup-radio" type="radio" name="popup-is-subscriber" id="popup-subscriber-no">
+          <label class="popup-label radio-label" for="popup-subscriber-no">Нет</label>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="popup-feedback" class="popup-label">Расскажите, какой контент вы хотели бы видеть
+          на нашем сайте?</label>
+          <textarea class="popup-input popup-area input" name="popup-feedback" id="popup-feedback-area" cols="30" rows="10" placeholder="Может, больше рецептов?"></textarea>
+          <button class="btn popup-btn" type="submit">отправить</button>
+      </div>
+    </form>
+  </div>
+  <div class="popup-backdrop" scroll="no"></div>
+
   <header class="header">
     <div class="wrapper header-container">
       <a class="logo" href="#"><img src="/svg/noemi-logo.svg" alt="Noemi"></a>

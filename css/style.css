@@ -67,6 +67,140 @@ a {
 }
 
 
+
+/* POPUP */
+
+
+.popup-backdrop {
+  position: fixed;
+  z-index: 9;
+  background: rgba(0, 0, 0, .6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.popup.visually-hidden + .popup-backdrop {
+  display: none;
+}
+
+.popup {
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  width: 390px;
+  padding: 52px 30px;
+  background: #ffffff;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.popup-title {
+  text-align: center;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.input-group {
+  margin-top: 28px;
+}
+
+.popup-label {
+  font-size: 13px;
+}
+
+.input {
+  flex-grow: 1;
+  padding: 16px 16px 16px 18px;
+  background: #F4F7F6;
+}
+
+.input:focus {
+  outline: 1px solid #B59F5B;
+  outline-offset: -1px;
+}
+
+.popup-input {
+  display: block;
+  width: 100%;
+}
+
+.popup-radio {
+  position: absolute;
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  width: 1px;
+  cursor: pointer;
+}
+
+.radio-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-label {
+  margin-left: 22px;
+}
+
+.radio-label:nth-child(n + 3) {
+  margin-left: 30px;
+}
+
+.radio-label::before {
+  position: absolute;
+  content: '';
+  left: -18px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  background-image: url("/svg/form-empty-circle.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-50%);
+}
+
+.popup-radio:checked + .radio-label::before {
+  background-image: url("/svg/form-circle.svg");
+}
+
+.popup-select {
+  position: relative;
+  color:rgba(0, 0, 0, .4);
+  background-image: url("/svg/form-arrows.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 3%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  scale: none;
+  cursor: pointer;
+}
+
+.popup-area {
+  box-sizing: border-box;
+  font-size: 13px;
+  font-family: inherit;
+  width: 100%;
+  resize: none;
+  border: none;
+}
+
+.popup-btn {
+  margin-top: 28px;
+  width: 100%;
+}
+
+
+
 /* HEADER */
 
 
@@ -416,17 +550,6 @@ a {
 .search-form {
   display: flex;
   margin-top: 60px;
-}
-
-.input {
-  flex-grow: 1;
-  padding: 16px 16px 16px 18px;
-  background: #F4F7F6;
-}
-
-.input:focus {
-  outline: 1px solid #B59F5B;
-  outline-offset: -1px;
 }
 
 .btn {
